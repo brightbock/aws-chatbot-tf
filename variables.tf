@@ -52,11 +52,6 @@ variable "user_role_required" {
   default = false
 }
 
-variable "aws_region" {
-  type    = string
-  default = "us-east-1"
-}
-
 variable "default_tags" {
   default = {}
 }
