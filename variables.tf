@@ -51,7 +51,3 @@ variable "user_role_required" {
   type    = bool
   default = false
 }
-
-variable "default_tags" {
-  default = {}
-}
