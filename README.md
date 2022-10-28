@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/brightbock/aws-chatbot-tf) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/brightbock/aws-chatbot-tf) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brightbock/taws-chatbot-tf/Terraform)
+![GitHub](https://img.shields.io/github/license/brightbock/aws-chatbot-tf) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/brightbock/aws-chatbot-tf) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brightbock/aws-chatbot-tf/Terraform)
 
 #  AWS ChatBot Terraform
 
