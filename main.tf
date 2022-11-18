@@ -39,6 +39,7 @@ resource "aws_cloudwatch_log_group" "aws_chatbot" {
   count             = local.no_op ? 0 : 1
   name              = lower("/aws/chatbot/${var.configuration_name}")
   retention_in_days = var.chatbot_log_retention_in_days
+  skip_destroy      = var.skip_destroy_log_group
 }
 
 resource "aws_cloudformation_stack" "aws_chatbot" {
@@ -47,6 +48,10 @@ resource "aws_cloudformation_stack" "aws_chatbot" {
   name               = local.name
   timeout_in_minutes = var.stack_timeout
   on_failure         = var.stack_on_failure
+
+  lifecycle {
+    ignore_changes = [timeout_in_minutes]
+  }
 
   parameters = {
     GuardrailPolicies = var.guardrail_policies

@@ -4,7 +4,7 @@ variable "configuration_name" {
 
 variable "stack_timeout" {
   type    = string
-  default = "3"
+  default = "1"
 }
 
 variable "stack_on_failure" {
@@ -51,3 +51,9 @@ variable "user_role_required" {
   type    = bool
   default = false
 }
+
+variable "skip_destroy_log_group" {
+  type    = bool
+  default = true
+}
+
